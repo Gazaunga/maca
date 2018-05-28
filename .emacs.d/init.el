@@ -19,8 +19,7 @@
 ;; for new packages.
 (setq package-archives '(("org"       . "http://orgmode.org/elpa/")
                          ("gnu"       . "http://elpa.gnu.org/packages/")
-                         ("melpa"     . "https://melpa.org/packages/")
-                         ("marmalade" . "http://marmalade-repo.org/packages/")))
+                         ("melpa"     . "https://melpa.org/packages/")))
 (package-initialize) ; guess what this one does ?
 
 ;; Bootstrap `use-package'
@@ -71,13 +70,13 @@
     "ar" 'ranger
     "ad" 'dired))
 
-(use-package which-key :ensure t
- :config
- (which-key-add-key-based-replacement
-  "C-c f" "file"
-  "C-c ff" "find file"
-  "C-c fr" "recently edited"
-  "C-c p"  "project"))
+;;(use-package which-key :ensure t
+;; :config
+;; (which-key-add-key-based-replacement
+;;  "C-c f" "file"
+;;  "C-c ff" "find file"
+;;  "C-c fr" "recently edited"
+;;  "C-c p"  "project"))
 
 (defun client-save-kill-emacs(&optional display)
   " This is a function that can bu used to shutdown save buffers and 
