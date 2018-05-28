@@ -166,3 +166,13 @@ nil are ignored."
   (save-some-buffers)
   (kill-emacs)
   )
+(custom-set-variables
+ '(custom-enabled-themes (quote (sanityinc-tomorrow-blue)))
+ '(custom-safe-themes
+   '(quote
+     ("" default)))
+ '(package-selected-packages
+   (quote
+    (color-theme-sanityinc-tomorrow which-key avy general use-package))))
+(custom-set-faces
+ )
